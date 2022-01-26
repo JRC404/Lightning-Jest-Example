@@ -1,0 +1,30 @@
+{
+  "name": "com.credersi.app.JestTestApplication",
+  "description": "Jest Test Application",
+  "scripts": {
+    "test": "jest"
+  },
+  "dependencies": {
+    "@lightningjs/sdk": "^4.8.1"
+  },
+  "devDependencies": {
+    "@babel/plugin-transform-modules-commonjs": "^7.16.8",
+    "jest": "^27.4.7",
+    "jest-webgl-canvas-mock": "^0.2.3"
+  },
+  "jest": {
+    "testEnvironment": "jsdom",
+    "testEnvironmentOptions": { "resources": "usable" },
+    "setupFiles": [
+      "jest-webgl-canvas-mock"
+    ],
+    "moduleNameMapper": {
+      "^src(.*)": "<rootDir>/src$1",
+      "^test(.*)": "<rootDir>/test$1"
+    },
+    "transform": {
+      "^.+\\.[m|t]?js$": "babel-jest"
+    },
+    "transformIgnorePatterns": []
+  }
+}

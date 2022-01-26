@@ -1,0 +1,6 @@
+{
+  "name": "Jest Test Application",
+  "identifier": "com.credersi.app.JestTestApplication",
+  "version": "1.0.0",
+  "icon": "./static/icon.png"
+}
