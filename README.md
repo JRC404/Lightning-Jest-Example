@@ -21,11 +21,17 @@ npm install -g @lightningjs/cli
 
 #### Developing the App
 
-During development you can use the **watcher** functionality of the _Lightning-CLI_.
-
-- use `lng watch` to automatically _rebuild_ your App whenever you make a change in the `src` or  `static` folder
 - use `lng dev` to start the watcher and run a local webserver / open the App in a browser _at the same time_
+
+#### Testing the App
+
+The application uses Jest to test applications. After you have installed the dependencies, you should be able to run the following command:
+
+1. `npm test`
+
+This should at first, return 2 successful tests in one Test Suite.
 
 #### Documentation
 
-Use `lng docs` to open up the Lightning-SDK documentation.
+* Use `lng docs` to open up the Lightning-SDK documentation.
+* Jest documentation can be found here: [Jest Documentation](https://jestjs.io/docs/getting-started)
